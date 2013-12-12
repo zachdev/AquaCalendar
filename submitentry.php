@@ -18,7 +18,7 @@ $notes = strip_tags($_POST['notes']);
 
 $date = "$year-$month-$day";
 
-$mysql = mysql_connect("localhost", "zach", "stoex43em");
+$mysql = mysql_connect("localhost", "username", "password");
 
 $query = "SELECT * FROM aquacalendar.entries WHERE date = '$date'";
 
