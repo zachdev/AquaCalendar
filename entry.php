@@ -17,7 +17,7 @@
 
 require_once("date.php");
 
-$mysql = mysql_connect("localhost", "zach", "stoex43em");
+$mysql = mysql_connect("localhost", "username", "password");
 
 $query = "SELECT * FROM aquacalendar.entries WHERE date = '$thisYearNum-$thisMonthNum-$thisDayNum'";
 
