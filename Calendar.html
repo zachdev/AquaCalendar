@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>AquaCalendar</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<?php
+
+function Calendar()
+{
+	$thisYearNum = date('Y');
+	$thisMonthNum = date('m');
+	$thisMonth = date('F');
+	$thisDayNum = date('d');
+	
+	
+	/* Get number of days in month */
+	
+	$daysInMonth = cal_days_in_month(CAL_GREGORIAN, $thisMonthNum, $thisYearNum);
+	
+	$monthArray = array();
+	
+	/* Add in empty days to the array until today's day */
+	for ($i = 1; i < $thisDayNum; $i++)
+	{
+		$monthArray[] = -1;
+	}
+	
+	/* Now add each day to the array */
+	for ($i = 1; $i <= $daysInMonth; $i++)
+	{
+		$monthArray[] = $i;
+	}
+	
+	/* Finally output it */
+	
+	foreach($monthArray as $day)
+	{
+		if ($day == -1)
+			$day = "";
+		echo "<div class=\"calendarday\"><div class=\"calendardaynum\">$day</div></div>";
+	}
+}
+
+Calendar();
+
+?>
+
+</body>
+</html>

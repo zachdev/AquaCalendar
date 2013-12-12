@@ -1,0 +1,115 @@
+@CHARSET "ISO-8859-1";
+
+.title {
+	background-color: #000;
+	padding: 10px;
+	text-align: center;
+}
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	background-color: #0080C0;
+	color: #FFF;
+}
+body a {
+	color: #FFF;
+}
+table.calendar-main {
+	background: #000;
+	margin: 0 auto;
+}
+.calendar-header{
+	font-size: 24px;
+	font-weight: bold;
+}
+td.calendar-day-header {
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+	background-color: #0CF;
+	color: #000;
+	height: 50px;
+	width: 120px;
+	padding-top: 10px;
+}
+td.calendar-day {
+	height: 100px;
+	width: 120px;
+	background: #0CF;
+	cursor: pointer;
+	cursor: hand;
+}
+td.calendar-day:hover {
+	background: #00FFFF;
+}
+td.calendar-day-today {
+	background: #00FFFF;
+	cursor: pointer;
+	cursor: hand;
+}
+.calendar-day-numbox {
+	position: relative;
+	margin: -1px -1px 0px 0px;
+	text-align: right;
+	font-weight: bold;
+	background: #000;
+	font-size: 12px;
+	height: 30px;
+	width: 30px;
+	float: right;
+	color: #FFF;
+	top: -35px;
+}
+
+.entry-main-box {
+	background: #000;
+	margin: 0 auto;
+	padding: 10px;
+	width: 800px;
+	height: 900px;
+}
+.entry-inner-box {
+	margin: 0 auto;
+	padding-top: 5%;
+	width: 400px;
+	
+}
+.entry-item {
+	color: #000;
+	font-weight: bold;
+	background: #0CF;
+	padding: 10px;
+	width: 400px;
+}
+
+.notes-item {
+    color: #000;
+    font-weight: bold;
+    background: #0CF;
+    padding: 10px;
+    width: 400px;
+    height: 100px;
+}
+.textbox {
+	float: right;
+}
+.backbutton {
+	width: 150px;
+	height: 60px;
+	float: left;
+	text-decoration: none;
+	background-color: #0CF;
+	color: #000;
+	text-align: center;
+	font-size: 24px;
+}
+.savebutton {
+	width: 150px;
+	height: 60px;
+	float: right;
+	margin-right: -20px;
+	text-decoration: none;
+	background-color: #0CF;
+	color: #000;
+	text-align: center;
+	font-size: 24px;
+}
